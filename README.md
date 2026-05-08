@@ -1,6 +1,6 @@
 # SecureScholar
 
-SecureScholar is a small local-AI Streamlit MVP for asking source-grounded questions over cybersecurity research papers.
+SecureScholar is a small local-AI Streamlit MVP for asking source-grounded questions over computer security research papers.
 
 ## Setup
 
