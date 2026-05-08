@@ -1,6 +1,18 @@
 # SecureScholar
 
-SecureScholar is a small local-AI Streamlit MVP for asking source-grounded questions over computer security research papers.
+SecureScholar is a local RAG app for working with computer security research papers. It lets me put a small set of PDFs into a folder, index them locally, and ask questions about attacks, defenses, limitations, and related work.
+
+The goal is to make reading cybersecurity papers faster without sending the papers to a cloud API.
+
+## Tech Stack
+
+- Python
+- Streamlit
+- Ollama
+- ChromaDB
+- LlamaIndex
+- pypdf
+- python-dotenv
 
 ## Setup
 
@@ -9,13 +21,14 @@ cd SecureScholar
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -r requirements.txt
-```
+
 
 Install Ollama, then pull one chat model and one embedding model:
 
 ```powershell
 ollama pull llama3.2
 ollama pull embeddinggemma
+
 ```
 
 The default `.env` points to local Ollama:
@@ -28,7 +41,7 @@ OLLAMA_EMBEDDING_MODEL=embeddinggemma
 
 ## Add Papers
 
-Put 5-20 cybersecurity research PDFs in `papers/`.
+Put 5-20 computer security research PDFs in `papers/`.
 
 ## Ingest
 
